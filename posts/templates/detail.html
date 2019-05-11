@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  하이
+  <div>
+      {% for post in posts %}
+      <div style="background: blue;margin:10px">
+        <div>{{ post.name }}</div>
+        <div>{{ post.address }}</div>
+        <span>{{ post.begin_time }}</span>
+        <span>{{ post.end_time }}</span>
+        <div>{{ post.phone }}</div>
+        <div>{{ post.category }}</div>
+        <div>{{ post.sub_category }}</div>
+      </div>
+      {% endfor %}
+    </div>
+</body>
+</html>
